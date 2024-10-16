@@ -1,0 +1,116 @@
+/* #region---Basic reset&general_styles */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: '';
+  src: url('') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '';
+  src: url('') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '';
+  src: url('') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: '', sans-serif;
+}
+
+:root {
+  --gap: ;
+  --color-white: ;
+  --color-black: ;
+  --time: .2s;
+  --style: ease-in-out;
+  --background-transition: background var(--time) var(--style);
+  --color-transition: color var(--time) var(--style);
+  --outline-transition: outline var(--time) var(--style);
+  --opacity-transition: opacity var(--time) var(--style);
+  --border-transition: border var(--time) var(--style);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+
+}
+
+.section-title {
+
+}
+
+.section-subtitle {
+
+}
+
+.section-descr {
+
+}
+
+/* #endregion */
+
