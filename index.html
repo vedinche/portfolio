@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <script src="js/lightmode.js" defer></script>
   </head>
 
   <body>
-    <header class="header">
+    <header class="header section-gap">
       <div class="container header__container flex">
-        <a href="#!" class="logo__link">
-          <img class="logo header__logo" src="img/logo.png" alt="Логотип" />
+        <a href="#!" class="logo">
+          <img class="logo__img" src="icons/logo-3.png" alt="Логотип" />
         </a>
         <nav class="nav">
           <ul class="nav__list list-reset flex">
@@ -21,7 +22,10 @@
               <a href="#!" class="nav__link">Обо мне</a>
             </li>
             <li class="nav__item">
-              <a href="#!" class="nav__link">Мой технический стек</a>
+              <a href="#!" class="nav__link">Резюме</a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">Навыки</a>
             </li>
             <li class="nav__item">
               <a href="#!" class="nav__link">Проекты</a>
@@ -31,101 +35,160 @@
             </li>
           </ul>
         </nav>
-        <div class="lang">
-          <span class="lang__ru">ru</span>
-          <span class="lang__separetor">&#47;</span>
-          <span class="lang__eng">eng</span>
+        <div class="lang-wrap">
+          <button class="lang lang-ru btn-reset" disabled>ru</button>
+          <span class="lang-separetor">&#47;</span>
+          <button class="lang lang-en btn-reset">en</button>
         </div>
+        <button class="theme-switch btn-reset">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e70faa"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e70faa"
+          >
+            <path
+              d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+            />
+          </svg>
+        </button>
       </div>
     </header>
 
     <main class="main">
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">Портфолио</h1>
-          <p class="hero__text">
-            Адаптивная, кросс-браузерная, валидная вёрстка
-          </p>
-          <p class="hero__text">Вёрстка с макетов Figma, Adobe Photoshop</p>
-          <p class="hero__text">Хорошее и практическое владение JS / Jquery</p>
-          <p class="hero__text">Опыт работы с CMS WP, Bitrix, Joomla</p>
-        </div>
-      </section>
-
-      <section class="about">
-        <div class="container">
-          <h2 class="visually-hidden">Обо мне</h2>
+      <section class="about section-gap">
+        <div class="container about__container flex">
+          <h1 class="visually-hidden">Портфолио</h1>
           <div class="about__content">
             <p class="about__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Привет 👋, Меня зовут
+              <span class="about__text-style">Андрей,</span>
+              я&nbsp;веб-разработчик. Создаю современные и&nbsp;эффективные
+              решения для интернета, которые помогают людям и&nbsp;бизнесу
+              достигать новых высот.
             </p>
-            <img src="img/me.webp" alt="Андрей Чешко" class="about__img" />
           </div>
-          <button class="about__btn">Скачать резюме</button>
+          <img class="about__img" src="img/me.webp" alt="Андрей Чешко" />
         </div>
       </section>
 
-      <section class="stack">
+      <section class="resume section-gap">
+        <div class="container resume__container">
+          <div class="resume__contant flex">
+            <h2 class="resume__title section-title">Резюме</h2>
+            <ul class="resume__list list-reset">
+              <li class="resume__item">
+                Адаптивная, кросс-браузерная, валидная вёрстка
+              </li>
+              <li class="resume__item">
+                Вёрстка из макетов Figma, Adobe Photoshop
+              </li>
+              <li class="resume__item">
+                HTML-вёрстка писем для email рассылок
+              </li>
+              <li class="resume__item">
+                Хорошее и практическое владение JS / Jquery
+              </li>
+              <li class="resume__item">Опыт работы с CMS WP, Bitrix, Joomla</li>
+            </ul>
+            <button class="resume__btn" download>Скачать резюме</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="stack section-gap">
         <div class="container">
-          <h2 class="section-title stack__title">Навыки</h2>
-          <p class="stack__descr">
-            Технологии, с которыми я работал в последнее время
-          </p>
-          <ul class="stack__list">
-            <li class="stack__img">
+          <h2 class="stack__title section-title section-title">Навыки</h2>
+          <h3 class="stack__subtitle section-subtitle">
+            Технологии, с которыми я работаю
+          </h3>
+          <ul class="stack__list-work list-reset flex">
+            <li class="stack__item">
               <img class="stack__img" src="icons/html.svg" alt="html5" />
             </li>
-            <li class="stack__img">
+            <li class="stack__item">
               <img class="stack__img" src="icons/css.svg" alt="css3" />
             </li>
-            <li class="stack__img">
+            <li class="stack__item">
               <img class="stack__img" src="icons/js.svg" alt="JavaScript" />
             </li>
-            <li class="stack__img">
-              <img class="stack__img" src="icons/query.svg" alt="jQuery" />
+            <li class="stack__item">
+              <img class="stack__img" src="icons/jquery.svg" alt="jQuery" />
             </li>
-            <li class="stack__img">
+            <li class="stack__item">
+              <img class="stack__img" src="icons/php.svg" alt="php" />
+            </li>
+            <li class="stack__item">
               <img
                 class="stack__img"
                 src="icons/bootstrap.svg"
                 alt="Bootstrap"
               />
             </li>
-            <li class="stack__img">
-              <img class="stack__img" src="icons/php.svg" alt="php" />
-            </li>
-            <li class="stack__img">
-              <img
-                class="stack__img"
-                src="icons/mail.svg"
-                alt="letter layout"
-              />
-            </li>
-            <li class="stack__img">
-              <img class="stack__img" src="icons/wp.svg" alt="WordPress" />
-            </li>
-            <li class="stack__img">
+            <li class="stack__item">
               <img class="stack__img" src="icons/bitrix.svg" alt="Bitrix" />
             </li>
-            <li class="stack__img">
-              <img class="stack__img" src="icons/figma.svg" alt="Figma" />
+            <li class="stack__item">
+              <img class="stack__img" src="icons/wp.svg" alt="wordpress" />
             </li>
-            <li class="stack__img">
-              <img class="stack__img" src="icons/github.svg" alt="Github" />
+            <li class="stack__item">
+              <img
+                class="stack__img"
+                src="icons/photoshop.svg"
+                alt="photoshop"
+              />
             </li>
-            <li class="stack__img">
-              <img class="stack__img" src="icons/vscode.svg" alt="VS code" />
+            <li class="stack__item">
+              <img class="stack__img" src="icons/figma.svg" alt="figma" />
+            </li>
+            <li class="stack__item">
+              <img class="stack__img" src="icons/vscode.svg" alt="vscode" />
+            </li>
+            <li class="stack__item">
+              <img class="stack__img" src="icons/github.svg" alt="github" />
+            </li>
+          </ul>
+          <h3 class="stack__subtitle section-subtitle">
+            Технологии, которые я изучаю
+          </h3>
+          <ul class="stack__list-learn list-reset flex">
+            <li class="stack__item">
+              <img class="stack__img" src="icons/react.svg" alt="react" />
+            </li>
+            <li class="stack__item">
+              <img class="stack__img" src="icons/ts.svg" alt="typescript" />
+            </li>
+            <li class="stack__item">
+              <img class="stack__img" src="icons/mysql.svg" alt="mysql" />
+            </li>
+            <li class="stack__item">
+              <img class="stack__img" src="icons/sass.svg" alt="sass" />
+            </li>
+            <li class="stack__item">
+              <img class="stack__img" src="icons/gulp.svg" alt="gulp" />
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="projects">
+      <section class="projects section-gap">
         <div class="container">
-          <h2 class="section-title projects__title">Мои проекты</h2>
+          <h2 class="section-title">Мои проекты</h2>
           <div class="projects__list">
             <article class="projects__item">
-              <h3 class="projects__title">lorem</h3>
+              <h3 class="projects__subtitle section-subtitle">lorem</h3>
               <div class="projects__text">
                 <p class="projects__descr">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -240,7 +303,7 @@
     <footer class="footer">
       <div class="container">
         <img
-          src="img/logo-footer.png"
+          src="icons/logo-footer.png"
           alt="Логотип"
           class="logo footer__logo"
         />
