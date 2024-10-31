@@ -158,7 +158,7 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1230px;
 }
 
 .section-gap {
@@ -200,6 +200,8 @@ body {
 
 .logo__img {
 	display: block;
+	width: 70px;
+	height: 63px;
 	object-fit: cover;
 }
 
@@ -345,19 +347,20 @@ body {
 
 .stack__list-work {
 	margin-bottom: 80px;
-	column-gap: 60px;
+	column-gap: 82px;
 	row-gap: 30px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .stack__list-learn {
+	margin-bottom: 80px;
 	justify-content: space-between;
 }
 
 .stack__item {
-width: 100px;
-height: 100px;
+	width: 100px;
+	height: 100px;
 }
 
 .stack__img {
@@ -365,3 +368,124 @@ height: 100px;
 	height: 100px;
 	object-fit: contain;
 }
+
+.stack-cert__list {
+	justify-content: space-between;
+}
+
+.stack-cert__item {
+	max-width: 220px;
+	padding-top: 58px;
+	background-position: 80px 0px;
+}
+
+.cert-cademy {
+	background-image: url(../icons/it-academy.svg);
+	background-repeat: no-repeat;
+	background-size: 52px 52px;
+}
+
+.cert-skillbox {
+	background-image: url(../icons/skillbox.svg);
+	background-repeat: no-repeat;
+	background-size: 52px 52px;
+}
+
+.cert-udemy {
+	background-image: url(../icons/udemy.svg);
+	background-repeat: no-repeat;
+	background-size: 52px 52px;
+}
+
+.stack-cert__link {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: var(--color-white);
+}
+
+/* projects */
+.projects__list {
+	gap: 40px;
+	--offsets: 2;
+	flex-wrap: wrap;
+}
+
+.projects__item {
+	padding-top: 286px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	width: calc((100% - (40px * var(--offsets))) / (var(--offsets) + 1));
+	border-radius: 20px;
+	background: #363636;
+	background-image: url(../img/stub.png);
+	background-repeat: no-repeat;
+	background-size: 100% 260px;
+}
+
+.projects__subtitle {
+	margin-bottom: 17px;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 26px;
+	color: var(--dark-mode-title);
+}
+
+.projects__descr {
+	margin-bottom: 12px;
+	width: 314px;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 26px;
+	color: var(--dark-mode-title);
+}
+
+.projects__stack {
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	line-height: 1.625;
+	color: var(--dark-mode-title);
+}
+
+.project__stack-list {
+font-weight: 300;
+font-size: 14px;
+}
+
+.projects__links {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.projects__view {
+	padding-left: 26px;
+	padding-bottom: 6px;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: var(--color-white);
+	background-image: url(../icons/link.svg);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+
+.projects__code {
+	padding-left: 26px;
+	padding-bottom: 8px;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: var(--color-white);
+	background-image: url(../icons/github-sm.svg);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+
+/* contacts */
