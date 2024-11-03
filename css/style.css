@@ -189,10 +189,12 @@ body {
 }
 
 .header__container {
+	font-family: var(--second-family);
 	align-items: center;
 }
 
 .logo {
+	display: block;
 	margin-right: 180px;
 	width: 70px;
 	height: 63px;
@@ -221,15 +223,14 @@ body {
 }
 
 .lang {
-	font-family: var(--second-family);
 	font-weight: 700;
 	font-size: 20px;
 	color: var(--light-content);
 }
 
-.lang:disabled {
-	/* background-color: #00c0fd; */
+.lang--inactive {
 	background-image: linear-gradient(83deg, #00c0fd 100%, #e70faa 0%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: default;
@@ -237,7 +238,6 @@ body {
 
 .lang-separetor {
 	padding: 0 6px;
-	font-family: var(--second-family);
 	font-weight: 400;
 	color: var(--light-content);
 }
@@ -453,8 +453,8 @@ body {
 }
 
 .project__stack-list {
-font-weight: 300;
-font-size: 14px;
+	font-weight: 300;
+	font-size: 14px;
 }
 
 .projects__links {
@@ -488,4 +488,95 @@ font-size: 14px;
 	background-size: 20px 20px;
 }
 
-/* contacts */
+/* footer */
+.footer {
+	font-family: var(--second-family);
+}
+
+.footer__top {
+	align-items: center;
+	padding-bottom: 42px;
+	border-bottom: 2px solid #42446e;
+}
+
+.footer__logo {
+	margin-right: auto;
+}
+
+.phone {
+	margin-right: 30px;
+	column-gap: 20px;
+}
+
+.phone__link {
+	padding-right: 26px;
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: var(--light-content);
+	background-image: url(../icons/phone.svg);
+	background-size: 20px 20px;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.mail {
+	margin-right: auto;
+}
+
+.mail__link {
+	padding-right: 26px;
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: var(--light-content);
+	background-image: url(../icons/gmail.svg);
+	background-size: 20px 20px;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.social__item:not(:last-child) {
+	margin-right: 20px;
+}
+
+.social__link {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.social__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.footer__bottom {
+	align-items: center;
+	justify-content: space-between;
+	padding: 60px 0;
+}
+
+.footer__nav-list {
+	column-gap: 20px
+}
+
+.footer__nav-link {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: var(--light-content);
+}
+
+.author {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

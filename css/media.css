@@ -1,6 +1,18 @@
 @media (any-hover) {
+	.nav__link:hover {
+		background-image: linear-gradient(83deg, #00c0fd 100%, #e70faa 0%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 
-
+	.phone__link:hover {
+		color: #37c6d0;
+	}
+	
+	.mail__link:hover {
+		color: #00c0fd; 
+	}
 
 }
 

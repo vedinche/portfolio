@@ -8,37 +8,36 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <script src="js/lightmode.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
 
   <body>
-    <header class="header section-gap">
+    <header class="header section-gap" id="header">
       <div class="container header__container flex">
-        <a href="#!" class="logo">
-          <img class="logo__img" src="icons/logo-3.png" alt="Логотип" />
-        </a>
+        <img class="logo" src="icons/logo-3.png" alt="Логотип" />
         <nav class="nav">
           <ul class="nav__list list-reset flex">
             <li class="nav__item">
-              <a href="#!" class="nav__link">Обо мне</a>
+              <a class="nav__link" href="#about">Обо мне</a>
             </li>
             <li class="nav__item">
-              <a href="#!" class="nav__link">Резюме</a>
+              <a class="nav__link" href="#resume">Резюме</a>
             </li>
             <li class="nav__item">
-              <a href="#!" class="nav__link">Навыки</a>
+              <a class="nav__link" href="#stack">Навыки</a>
             </li>
             <li class="nav__item">
-              <a href="#!" class="nav__link">Проекты</a>
+              <a class="nav__link" href="#projects">Проекты</a>
             </li>
             <li class="nav__item">
-              <a href="#!" class="nav__link">Контакты</a>
+              <a class="nav__link" href="#contact">Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="lang-wrap">
-          <button class="lang lang-ru btn-reset" disabled>ru</button>
+          <a class="lang lang-ru lang--inactive">ru</a>
           <span class="lang-separetor">&#47;</span>
-          <button class="lang lang-en btn-reset">en</button>
+          <a class="lang lang-en btn-reset" tabindex="0">en</a>
         </div>
         <button class="theme-switch btn-reset">
           <svg
@@ -68,7 +67,7 @@
     </header>
 
     <main class="main">
-      <section class="about section-gap">
+      <section class="about section-gap" id="about">
         <div class="container about__container flex">
           <h1 class="visually-hidden">Портфолио</h1>
           <div class="about__content">
@@ -84,7 +83,7 @@
         </div>
       </section>
 
-      <section class="resume section-gap">
+      <section class="resume section-gap" id="resume">
         <div class="container resume__container">
           <div class="resume__contant flex">
             <h2 class="resume__title section-title">Резюме</h2>
@@ -108,7 +107,7 @@
         </div>
       </section>
 
-      <section class="stack section-gap">
+      <section class="stack section-gap" id="stack">
         <div class="container">
           <h2 class="stack__title section-title section-title">Навыки</h2>
           <h3 class="stack__subtitle section-subtitle">
@@ -206,7 +205,7 @@
         </div>
       </section>
 
-      <section class="projects section-gap">
+      <section class="projects section-gap" id="projects">
         <div class="container">
           <h2 class="section-title">Мои проекты</h2>
           <div class="projects__list flex">
@@ -333,59 +332,91 @@
           </div>
         </div>
       </section>
-      <section class="contacts section-gap">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="container contacts__container"></div>
-      </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container">
-        <a href="#!" class="logo">
-          <img class="logo__img" src="icons/logo-3.png" alt="Логотип" />
-        </a>
-        <span class="footer__phone">
-          <a class="footer__phone-link" href="tel:+79254107737">
-            +7 (925) 410-77-37
+        <div class="footer__top flex">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a href="#header" class="logo footer__logo">
+            <img class="logo__img" src="icons/logo-3.png" alt="Логотип" />
           </a>
-        </span>
-        <span class="footer__mail">
-          <a href="mailto:vedinche@gmail.com">vedinche@gmail.com</a>
-        </span>
-        <ul class="social footer__social list-reset flex">
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://github.com/vedinche"
-              aria-label="github"
-              target="_blank"
-            ></a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://t.me/vedin_che"
-              aria-label="Телеграмм"
-              target="_blank"
-            ></a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://wa.me/79254107737"
-              aria-label="WhatsApp"
-              target="_blank"
-            ></a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://wa.me/79254107737"
-              aria-label="instagramm"
-              target="_blank"
-            ></a>
-          </li>
-        </ul>
+          <div class="phone flex">
+            <a class="phone__link" href="tel:+79254107737">
+              RU +7 (925) 410-77-37
+            </a>
+            <a class="phone__link" href="tel:+375297737997">
+              BY +375 (29) 773-79-97
+            </a>
+          </div>
+          <div class="mail">
+            <a class="mail__link" href="mailto:vedinche@gmail.com">
+              vedinche@gmail.com
+            </a>
+          </div>
+          <ul class="social list-reset flex">
+            <li class="social__item">
+              <a
+                class="social__link social__git"
+                href="https://github.com/vedinche"
+                target="_blank"
+              >
+                <img
+                  class="social__img"
+                  src="icons/github-md.svg"
+                  alt="Github"
+                />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://t.me/vedin_che"
+                aria-label="Телеграмм"
+                target="_blank"
+              >
+                <img class="social__img" src="icons/tg.svg" alt="Телеграмм" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__wapp"
+                href="https://wa.me/79254107737"
+                target="_blank"
+              >
+                <img
+                  class="social__img"
+                  src="icons/whatsapp.svg"
+                  alt="WhatsApp"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom flex">
+          <nav class="footer__nav flex">
+            <ul class="footer__nav-list list-reset flex">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#about">Обо мне</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#resume">Резюме</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#stack">Навыки</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#projects">Проекты</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#contact">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="author" href="https://github.com/vedinche">
+            &#169; vedinche
+          </a>
+        </div>
       </div>
     </footer>
   </body>
