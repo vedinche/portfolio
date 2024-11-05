@@ -1,41 +1,189 @@
 @media (any-hover) {
+	.nav__link:focus-visible {
+		color: #00c0fd;
+	}
+
 	.nav__link:hover {
-		background-image: linear-gradient(83deg, #00c0fd 100%, #e70faa 0%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		background-size: 100% 2px;
+	}
+
+	.nav__link:active {
+		color: #00c0fd;
+	}
+
+	.lang:focus-visible {
+		color: #e70faa;
+	}
+
+	.lang:hover {
+		color: #e70faa;
+	}
+
+	.lang:active {
+		opacity: var(--opacity);
+	}
+
+	.theme-switch:focus-visible .theme__switch-color {
+		fill: #00c0fd;
+	}
+
+	.theme__switch-color:hover {
+		fill: #00c0fd;
+	}
+
+	.theme__switch-color:active {
+		opacity: var(--opacity);
+	}
+
+	.btn:focus-visible .btn__text {
+		background: none;
+	}
+
+	.btn:hover .btn__text {
+		background: none;
+	}
+
+	.lightmode .btn:focus-visible .btn__text {
+		color: var(--color-white);
+	}
+
+	.lightmode .btn:hover .btn__text {
+		color: var(--color-white);
+	}
+
+	.btn:active {
+		transform: scale(0.9);
+	}
+
+	.stack-cert__item:nth-child(even) .stack-cert__link:focus-visible {
+		color: #37c6d0;
+	}
+
+	.stack-cert__item:nth-child(odd) .stack-cert__link:focus-visible {
+		color: #00c0fd;
+	}
+
+	.stack-cert__item:nth-child(even) .stack-cert__link:hover {
+		color: #37c6d0;
+	}
+
+	.stack-cert__item:nth-child(odd) .stack-cert__link:hover {
+		color: #00c0fd;
+	}
+
+	.stack-cert__item:nth-child(even) .stack-cert__link:active {
+		color: #00c0fd;
+	}
+
+	.stack-cert__item:nth-child(odd) .stack-cert__link:active {
+		color: #37c6d0;
+	}
+
+	.projects__view:focus-visible {
+		color: #00c0fd;
+		background-image: url(../icons/link-hover.svg);
+	}
+
+	.projects__code:focus-visible {
+		color: #37c6d0;
+		background-image: url(../icons/github-sm-hover.svg);
+	}
+
+	.projects__view:hover {
+		color: #00c0fd;
+		background-image: url(../icons/link-hover.svg);
+	}
+
+	.projects__code:hover {
+		color: #37c6d0;
+		background-image: url(../icons/github-sm-hover.svg);
+	}
+
+	.projects__view:active {
+		color: #37c6d0;
+		background-image: url(../icons/link-hover.svg);
+	}
+
+	.projects__code:active {
+		color: #00c0fd;
+		background-image: url(../icons/github-sm-hover.svg);
+	}
+
+	.footer__logo:focus-visible {
+		outline: 2px solid #00c0fd;
+	}
+
+	.phone__link:focus-visible {
+		color: #37c6d0;
+	}
+
+	.mail__link:focus-visible {
+		color: #00c0fd;
 	}
 
 	.phone__link:hover {
 		color: #37c6d0;
 	}
-	
+
 	.mail__link:hover {
-		color: #00c0fd; 
+		color: #00c0fd;
+	}
+
+	.phone__link:active {
+		transform: scale(0.9);
+	}
+
+	.mail__link:active {
+		color: #37c6d0;
+	}
+
+	.social__link:focus-visible {
+		outline: 2px solid #00c0fd;
+	}
+
+	.social__link:hover {
+		opacity: var(--opacity);
+	}
+
+	.social__link:active {
+		transform: scale(0.9);
+	}
+
+	.footer__nav-item:nth-child(even) .footer__nav-link:focus-visible {
+		color: #37c6d0;
+	}
+
+	.footer__nav-item:nth-child(odd) .footer__nav-link:focus-visible {
+		color: #00c0fd;
+	}
+
+	.footer__nav-item:nth-child(even) .footer__nav-link:hover {
+		color: #37c6d0;
+	}
+
+	.footer__nav-item:nth-child(odd) .footer__nav-link:hover {
+		color: #00c0fd;
+	}
+
+	.footer__nav-item:nth-child(even) .footer__nav-link:active {
+		color: #00c0fd;
+	}
+
+	.footer__nav-item:nth-child(odd) .footer__nav-link:active {
+		color: #37c6d0;
+	}
+
+	.author:focus-visible {
+		outline: 2px solid #00c0fd;
 	}
 
 }
 
 
-@media (max-width: 1279px) {
+@media (max-width: 1279px) {}
 
+@media (max-width: 1023px) {}
 
-}
+@media (max-width: 767px) {}
 
-@media (max-width: 1023px) {
-
-
-
-}
-
-@media (max-width: 767px) {
-
-
-
-}
-
-@media (max-width: 575px) {
-  
-
-
-}
+@media (max-width: 575px) {}
