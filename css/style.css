@@ -213,13 +213,6 @@ body {
 	height: 63px;
 }
 
-.logo__img {
-	display: block;
-	width: 70px;
-	height: 63px;
-	object-fit: cover;
-}
-
 .nav__item {
 	margin-right: 65px;
 }
