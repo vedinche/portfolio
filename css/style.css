@@ -112,6 +112,7 @@ img {
 	--color-white: #d9d9d9;
   --color-blue: #1c70ec;
   --color-green: #37c6d0;
+  --color-yellow: #fefeb3;
 	--opacity: .8;
 	--time: .2s;
 	--style: ease-in-out;
@@ -259,6 +260,10 @@ body {
 	cursor: default;
 }
 
+.lightmode .lang--inactive {
+  color: var(--color-blue);
+}
+
 .lang-separetor {
 	padding: 0 6px;
 	font-weight: 400;
@@ -315,10 +320,7 @@ body {
 }
 
 .about__text-style {
-	background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+color: var(--color-blue);
 }
 
 .about__img {

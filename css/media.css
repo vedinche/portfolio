@@ -12,11 +12,11 @@
 	}
 
 	.lang:focus-visible {
-		color: #e70faa;
+		color: var(--color-green);
 	}
 
 	.lang:hover {
-		color: #e70faa;
+		color: var(--color-green);
 	}
 
 	.lang:active {
@@ -24,14 +24,10 @@
 	}
 
 	.theme-switch:focus-visible .theme__switch-color {
-		fill: var(--color-blue);
+		opacity: var(--opacity);
 	}
 
 	.theme__switch-color:hover {
-		fill: var(--color-blue);
-	}
-
-	.theme__switch-color:active {
 		opacity: var(--opacity);
 	}
 
