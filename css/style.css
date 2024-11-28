@@ -110,6 +110,8 @@ img {
 	--dark-content: #666;
 	--light-content: #a7a7a7;
 	--color-white: #d9d9d9;
+  --color-blue: #1c70ec;
+  --color-green: #37c6d0;
 	--opacity: .8;
 	--time: .2s;
 	--style: ease-in-out;
@@ -209,8 +211,8 @@ body {
 .logo {
 	display: block;
 	margin-right: 180px;
-	width: 70px;
-	height: 63px;
+	width: 100px;
+	height: 87px;
 }
 
 .nav__item {
@@ -224,7 +226,7 @@ body {
 	font-size: 20px;
 	line-height: 26px;
 	color: var(--light-content);
-	background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+	background-image: linear-gradient(45deg, var(--color-blue), rgb(28, 112, 236));
 	background-position: 0 100%;
 	background-repeat: no-repeat;
 	background-size: 0 2px;
@@ -252,10 +254,8 @@ body {
 }
 
 .lang--inactive {
-	background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: var(--color-blue);
+  pointer-events: none;
 	cursor: default;
 }
 
@@ -600,6 +600,8 @@ body {
 
 .footer__logo {
 	margin-right: auto;
+  width: 60px;
+  height: 38px;
 }
 
 .phone {
