@@ -164,7 +164,149 @@
 }
 
 
-@media (max-width: 1279px) {}
+@media (max-width: 1279px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .nav__item {
+    margin-right: 30px;
+  }
+
+  .lang-wrap {
+    margin-right: 0;
+  }
+
+ :root {
+  --section-gap: 120px;
+ }
+
+ .about__text {
+  max-width: 520px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.about__img {
+  width: 300px;
+  height: 300px;
+}
+
+.section-title {
+  margin-bottom: 42px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.resume__container {
+  background-size: 460px 418px;
+}
+
+.resume__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.resume__item {
+  padding-left: 36px;
+  font-size: 18px;
+  background-size: 24px 24px;
+}
+
+.section-subtitle {
+  font-size: 28px;
+  line-height: 22px;
+}
+
+.stack__img {
+  width: 80px;
+  height: 80px;
+}
+
+.cert-cademy {
+  background-image: url(../icons/it-academy.svg);
+  background-repeat: no-repeat;
+  background-size: 52px 52px;
+}
+
+.stack-cert__link {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.projects__list {
+  --gap: 20px;
+}
+
+.projects__item {
+  padding-top: 260px;
+  background-size: 100% 230px;
+}
+
+.projects__subtitle {
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.projects__descr {
+  width: 100%;
+  max-width: 320px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.projects__stack {
+  font-size: 12px;
+}
+
+.project__stack-list {
+	font-size: 10px;
+}
+
+.projects__view {
+padding-left: 22px;
+  font-size: 12px;
+  background-size: 16px 16px;
+}
+
+.projects__code {
+ padding-left: 22px;
+  font-size: 12px;
+  background-size: 16px 16px;
+}
+
+.stack__list-work {
+  margin-bottom: 60px;
+  column-gap: 60px;
+  row-gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.phone {
+  flex-direction: column;
+  margin-right: 0;
+  column-gap: 0;
+}
+
+.mail {
+  margin-right: 0;
+}
+
+.footer__top {
+  justify-content: space-between;
+}
+
+}
 
 @media (max-width: 1023px) {}
 

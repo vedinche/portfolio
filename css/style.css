@@ -100,6 +100,7 @@ img {
 
 
 :root {
+  --gap: 40px;
 	--section-gap: 160px;
 	--font-family: "Poppins", sans-serif;
 	--second-family: "DM Sans", sans-serif;
@@ -474,7 +475,7 @@ color: var(--color-blue);
 
 /* projects */
 .projects__list {
-	gap: 40px;
+	gap: var(--gap);
 	--offsets: 2;
 	flex-wrap: wrap;
 }
@@ -484,7 +485,7 @@ color: var(--color-blue);
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 20px;
-	width: calc((100% - (40px * var(--offsets))) / (var(--offsets) + 1));
+	width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 	border-radius: 20px;
 	background-color: #363636;
 	background-image: url(../img/stub.png);
@@ -526,7 +527,6 @@ color: var(--color-blue);
 	margin-bottom: 20px;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 26px;
 	line-height: 1.625;
 	color: var(--dark-mode-title);
 }
