@@ -145,28 +145,16 @@
 		transform: scale(0.9);
 	}
 
-	.footer__nav-item:nth-child(even) .footer__nav-link:focus-visible {
-		color: var(--color-green);
-	}
-
-	.footer__nav-item:nth-child(odd) .footer__nav-link:focus-visible {
+	.footer__nav-link:focus-visible {
 		color: var(--color-blue);
 	}
 
-	.footer__nav-item:nth-child(even) .footer__nav-link:hover {
-		color: var(--color-green);
-	}
-
-	.footer__nav-item:nth-child(odd) .footer__nav-link:hover {
+.footer__nav-link:hover {
 		color: var(--color-blue);
 	}
 
-	.footer__nav-item:nth-child(even) .footer__nav-link:active {
-		color: var(--color-blue);
-	}
-
-	.footer__nav-item:nth-child(odd) .footer__nav-link:active {
-		color: var(--color-green);
+	.footer__nav-link:active {
+		opacity: var(--opacity);
 	}
 
 	.author:focus-visible {
