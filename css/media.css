@@ -160,7 +160,6 @@
 	.author:focus-visible {
 		outline: 2px solid var(--color-blue);
 	}
-
 }
 
 
@@ -268,7 +267,7 @@
   font-size: 12px;
 }
 
-.project__stack-list {
+.projects__stack-list {
 	font-size: 10px;
 }
 
@@ -308,8 +307,143 @@ padding-left: 22px;
 
 }
 
-@media (max-width: 1023px) {}
+@media (max-width: 1023px) {
+.logo {
+  width: 60px;
+  height: 52px;
+}
 
-@media (max-width: 767px) {}
+.nav__item {
+  margin-right: 28px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.lang {
+  font-size: 17px;
+}
+
+.theme__switch-color {
+  width: 20px;
+  height: 20px;
+}
+
+.about__text {
+  max-width: 420px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+.about__img {
+  width: 200px;
+  height: 200px;
+}
+
+:root {
+  --section-gap: 110px;
+}
+
+.section-title {
+  margin-bottom: 34px;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.resume__item:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+.resume__item {
+  padding-left: 33px;
+  font-weight: 600;
+  font-size: 14px;
+  background-size: 22px 22px;
+}
+
+.resume__container {
+  background-size: 320px 290px;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  line-height: 18px;
+}
+
+.stack__list-work {
+  margin-bottom: 60px;
+  column-gap: 60px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stack__item {
+  width: 60px;
+  height: 60px;
+}
+
+.stack__img {
+  width: 60px;
+  height: 60px;
+}
+
+.stack-cert__link {
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.stack-cert__item {
+  background-position: 47px 0px;
+  background-size: 36px 36px;
+}
+
+.slider .swiper-wrapper {
+  flex-wrap: nowrap;
+} 
+
+.projects__list {
+  --offsets: 1;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.phone__link:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.phone__link {
+  font-size: 16px;
+}
+
+.mail__link {
+  font-size: 16px;
+}
+
+.footer__top {
+  padding-bottom: 30px;
+}
+
+.footer__bottom {
+  padding: 40px 0;
+}
+
+.footer__nav-link {
+  font-size: 16px;
+}
+}
+
+@media (max-width: 767px) {
+  
+}
 
 @media (max-width: 575px) {}
