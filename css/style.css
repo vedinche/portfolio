@@ -325,6 +325,10 @@ body {
   transition: opacity .3s ease-in-out;
 }
 
+.lightmode .burger__line {
+  background-color: var(--dark-mode);
+}
+
 .burger::before,
 .burger::after {
   content: '';
@@ -334,6 +338,11 @@ body {
   height: 2px;
   background-color: var(--color-white);
   transition: transform .3s ease-in-out, top .3s ease-in-out, bottom .3s ease-in-out;
+}
+
+.lightmode .burger::before,
+.lightmode .burger::after {
+  background-color: var(--dark-mode);
 }
 
 .burger::before {

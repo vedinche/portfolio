@@ -456,6 +456,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+  .lightmode .header {
+    background-color: var(--light-mode);
+  }
+
   .logo {
     width: 50px;
     height: 42px;
@@ -474,6 +478,10 @@
     height: 100%;
     background-color: rgba(19, 19, 19, .8);
     transform: translateX(100%);
+  }
+
+  .lightmode .header__control {
+    background-color: rgba(255, 255, 255, .8);
   }
 
   .header__control--visible {
@@ -511,12 +519,16 @@
 
   .nav__list {
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 16px;
   }
 
   .nav__item:first-child {
     border-top: 1px solid #fff;
     padding-top: 50px;
+  }
+
+  .lightmode   .nav__item:first-child {
+    border-color: var(--dark-mode);
   }
 
   .nav__item:not(:last-child) {
@@ -526,6 +538,10 @@
 
   .nav__link {
     font-size: 20px;
+  }
+
+  .lightmode .nav__link {
+    color: var(--dark-mode);
   }
 
   .overlay {
