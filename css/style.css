@@ -291,7 +291,7 @@ body {
   outline: none;
 }
 
-.theme__switch-color {
+.theme-switch__color {
   transition: var(--fill-transition), var(--opacity-transition);
 }
 

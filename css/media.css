@@ -23,11 +23,11 @@
     opacity: var(--opacity);
   }
 
-  .theme-switch:focus-visible .theme__switch-color {
+  .theme-switch:focus-visible .theme-switch__color {
     opacity: var(--opacity);
   }
 
-  .theme__switch-color:hover {
+  .theme-switch__color:hover {
     opacity: var(--opacity);
   }
 
@@ -331,7 +331,7 @@
     font-size: 17px;
   }
 
-  .theme__switch-color {
+  .theme-switch__color {
     width: 20px;
     height: 20px;
   }
@@ -507,7 +507,7 @@
     left: 116px;
   }
 
-  .theme__switch-color {
+  .theme-switch__color {
     width: 24px;
     height: 24px;
   }
