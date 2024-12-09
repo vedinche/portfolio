@@ -3,8 +3,8 @@
 <path d="M30.6291 13.6129L16.5908 27.2258L10.2097 21.0381" stroke="#d9d9d9" stroke-width="3.40323" stroke-linecap="round" stroke-linejoin="round"/>
   <defs>
     <linearGradient id="paint0_linear_14_15" x1="-20.05" y1="32.7549" x2="81.972" y2="-3.32031" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00C0FD" />
-      <stop offset="1" stop-color="#E70FAA" />
+      <stop stop-color="#1c70ec" />
+      <stop offset="1" stop-color="#37c6d0" />
     </linearGradient>
 		    <!-- <linearGradient id="paint0_linear_14_18" x1="-86.0501" y1="36.7549" x2="15.9719" y2="0.679722" gradientUnits="userSpaceOnUse">
       <stop stop-color="#00C0FD" />

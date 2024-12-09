@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="js/swiper.js" defer></script>
     <script src="js/lightmode.js" defer></script>
     <script src="js/script.js" defer></script>
   </head>
@@ -80,7 +80,7 @@
     </header>
 
     <main class="main">
-      <!-- <section class="about section-gap" id="about">
+      <section class="about section-gap" id="about">
         <div class="container about__container flex">
           <h1 class="visually-hidden">Портфолио</h1>
           <div class="about__content">
@@ -94,7 +94,7 @@
           </div>
           <img class="about__img" src="img/me.webp" alt="Андрей Чешко" />
         </div>
-      </section> -->
+      </section>
 
       <section class="resume section-gap" id="resume">
         <div class="container resume__container">
@@ -116,7 +116,7 @@
           <source src="video/1.mp4" type="video/mp4">
         </video>
       </section>
-      <!-- 
+
       <section class="stack section-gap" id="stack">
         <div class="container">
           <h2 class="stack__title section-title section-title">Навыки</h2>
@@ -193,134 +193,147 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="projects section-gap" id="projects">
+      <section class="projects section-gap" id="projects">
         <div class="container">
           <h2 class="section-title">Мои проекты</h2>
-          <div class="swiper slider">
-            <div class="swiper-wrapper projects__list">
-              <article class="projects__item swiper-slide">
-                <h3 class="projects__subtitle">Project Tile goes here</h3>
-                <div class="projects__text">
-                  <p class="projects__descr">
-                    This is sample project description random things are here in description This is sample project
-                    lorem
-                    ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="projects__stack">
-                    Технологии:
-                    <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
-                  </p>
-                </div>
-                <div class="projects__links flex">
-                  <a class="projects__view" href="#!">Посмотреть проект</a>
-                  <a class="projects__code" href="#!">Посмотреть код</a>
-                </div>
-              </article>
-              <article class="projects__item swiper-slide">
-                <h3 class="projects__subtitle">Project Tile goes here</h3>
-                <div class="projects__text">
-                  <p class="projects__descr">
-                    This is sample project description random things are here in description This is sample project
-                    lorem
-                    ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="projects__stack">
-                    Технологии:
-                    <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
-                  </p>
-                </div>
-                <div class="projects__links flex">
-                  <a class="projects__view" href="#!">Посмотреть проект</a>
-                  <a class="projects__code" href="#!">Посмотреть код</a>
-                </div>
-              </article>
-              <article class="projects__item swiper-slide">
-                <h3 class="projects__subtitle">Project Tile goes here</h3>
-                <div class="projects__text">
-                  <p class="projects__descr">
-                    This is sample project description random things are here in description This is sample project
-                    lorem
-                    ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="projects__stack">
-                    Технологии:
-                    <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
-                  </p>
-                </div>
-                <div class="projects__links flex">
-                  <a class="projects__view" href="#!">Посмотреть проект</a>
-                  <a class="projects__code" href="#!">Посмотреть код</a>
-                </div>
-              </article>
-              <article class="projects__item swiper-slide">
-                <h3 class="projects__subtitle">Project Tile goes here</h3>
-                <div class="projects__text">
-                  <p class="projects__descr">
-                    This is sample project description random things are here in description This is sample project
-                    lorem
-                    ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="projects__stack">
-                    Технологии:
-                    <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
-                  </p>
-                </div>
-                <div class="projects__links flex">
-                  <a class="projects__view" href="#!">Посмотреть проект</a>
-                  <a class="projects__code" href="#!">Посмотреть код</a>
-                </div>
-              </article>
-              <article class="projects__item swiper-slide">
-                <h3 class="projects__subtitle">Project Tile goes here</h3>
-                <div class="projects__text">
-                  <p class="projects__descr">
-                    This is sample project description random things are here in description This is sample project
-                    lorem
-                    ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="projects__stack">
-                    Технологии:
-                    <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
-                  </p>
-                </div>
-                <div class="projects__links flex">
-                  <a class="projects__view" href="#!">Посмотреть проект</a>
-                  <a class="projects__code" href="#!">Посмотреть код</a>
-                </div>
-              </article>
-              <article class="projects__item swiper-slide">
-                <h3 class="projects__subtitle">Project Tile goes here</h3>
-                <div class="projects__text">
-                  <p class="projects__descr">
-                    This is sample project description random things are here in description This is sample project
-                    lorem
-                    ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="projects__stack">
-                    Технологии:
-                    <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
-                  </p>
-                </div>
-                <div class="projects__links flex">
-                  <a class="projects__view" href="#!">Посмотреть проект</a>
-                  <a class="projects__code" href="#!">Посмотреть код</a>
-                </div>
-              </article>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-      </section> -->
+        <div class="swiper-pagination"></div>
+      </section>
     </main>
 
-    <!-- <footer class="footer" id="contact">
+    <footer class="footer" id="contact">
       <div class="container">
         <div class="footer__top flex">
           <h2 class="visually-hidden">Контакты</h2>
@@ -380,7 +393,7 @@
           <a class="author" href="https://github.com/vedinche">&#169; vedinche</a>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 
 </html>
