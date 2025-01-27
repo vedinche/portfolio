@@ -591,6 +591,7 @@
 
   .stack__list-work {
     column-gap: 23px;
+    justify-content: flex-start;
   }
 
   .stack-cert__list {

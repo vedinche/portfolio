@@ -5,15 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <link rel="preload" href="/fonts/Poppins-Light.woff2" as="font">
-    <link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font">
-    <link rel="preload" href="/fonts/Poppins-Medium.woff2" as="font">
-    <link rel="preload" href="/fonts/Poppins-SemiBold.woff2" as="font">
-    <link rel="preload" href="/fonts/Poppins-Bold.woff2" as="font">
-    <link rel="preload" href="/fonts/DMSans-Light.woff2" as="font">
-    <link rel="preload" href="/fonts/DMSans-Regular.woff2" as="font">
-    <link rel="preload" href="/fonts/DMSans-Medium.woff2" as="font">
-    <link rel="preload" href="/fonts/DMSans-Bold.woff2" as="font">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
@@ -26,7 +17,7 @@
     <div class="overlay"></div>
     <header class="header section-gap" id="header">
       <div class="container header__container flex">
-        <img class="logo" src="icons/logo.png" alt="Логотип">
+        <img class="logo" src="icons/logo.webp" alt="Логотип">
         <div class="header__control flex">
           <nav class="nav">
             <ul class="nav__list list-reset flex">
@@ -131,58 +122,102 @@
           <h3 class="stack__subtitle section-subtitle">Технологии, с которыми я работаю</h3>
           <ul class="stack__list-work list-reset flex">
             <li class="stack__item">
-              <img class="stack__img" src="icons/html.svg" alt="html5">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#html"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/css.svg" alt="css3">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#css"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/js.svg" alt="JavaScript">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#bootstrap"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/jquery.svg" alt="jQuery">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#sass"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/php.svg" alt="php">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#gulp"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/bootstrap.svg" alt="Bootstrap">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#mjml"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/bitrix.svg" alt="Bitrix">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#js"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/wp.svg" alt="wordpress">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#jq"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/photoshop.svg" alt="photoshop">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#bitrix"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/figma.svg" alt="figma">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#wp"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/vscode.svg" alt="vscode">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#photoshop"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/github.svg" alt="github">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#figma"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#vscode"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#github"></use>
+              </svg>
             </li>
           </ul>
           <h3 class="stack__subtitle section-subtitle">Технологии, которые я изучаю</h3>
           <ul class="stack__list-learn list-reset flex">
             <li class="stack__item">
-              <img class="stack__img" src="icons/react.svg" alt="react">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#react"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/ts.svg" alt="typescript">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#ts"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/mysql.svg" alt="mysql">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#node"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/sass.svg" alt="sass">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#mysql"></use>
+              </svg>
             </li>
             <li class="stack__item">
-              <img class="stack__img" src="icons/gulp.svg" alt="gulp">
+              <svg class="stack__img">
+                <use xlink:href="/icons/sprite.svg#php"></use>
+              </svg>
             </li>
           </ul>
           <h3 class="stack__subtitle section-subtitle">Сертификаты</h3>
@@ -346,7 +381,7 @@
         <div class="footer__top flex">
           <h2 class="visually-hidden">Контакты</h2>
           <a href="#header" class="logo footer__logo">
-            <img class="logo__img" src="icons/logo-footer.png" alt="Логотип">
+            <img class="logo__img" src="icons/logo-footer.webp" alt="Логотип">
           </a>
           <div class="phone flex">
             <a class="phone__link" href="tel:+79254107737">RU +7 (925) 410-77-37</a>
@@ -358,22 +393,30 @@
           <ul class="social list-reset flex">
             <li class="social__item">
               <a class="social__link social__git" href="https://github.com/vedinche" target="_blank">
-                <img class="social__img" src="icons/github-md.svg" alt="Github">
+                <svg class="social__img">
+                  <use xlink:href="/icons/sprite.svg#github-md"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__codepen" href="https://codepen.io/vedinche" target="_blank">
-                <img class="social__img" src="icons/codepen.svg" alt="Github">
+                <svg class="social__img">
+                  <use xlink:href="/icons/sprite.svg#codepen"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://t.me/vedin_che" aria-label="Телеграмм" target="_blank">
-                <img class="social__img" src="icons/tg.svg" alt="Телеграмм">
+              <a class="social__link" href="https://t.me/vedin_che" target="_blank">
+                <svg class="social__img">
+                  <use xlink:href="/icons/sprite.svg#tg"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__wapp" href="https://wa.me/79254107737" target="_blank">
-                <img class="social__img" src="icons/whatsapp.svg" alt="WhatsApp">
+                <svg class="social__img">
+                  <use xlink:href="/icons/sprite.svg#whatsapp"></use>
+                </svg>
               </a>
             </li>
           </ul>

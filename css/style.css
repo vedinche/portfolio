@@ -543,17 +543,17 @@ body {
 
 .stack__list-learn {
   margin-bottom: 80px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .stack__item {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .stack__img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -637,7 +637,7 @@ body {
   border-radius: 20px;
   max-width: 320px;
   background-color: #363636;
-  background-image: url(../img/stub.png);
+  background-image: url(../img/stub.webp);
   background-repeat: no-repeat;
   background-size: 100% 260px;
 }
