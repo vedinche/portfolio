@@ -98,7 +98,6 @@ img {
   font-display: swap;
 }
 
-
 :root {
   --gap: 40px;
   --section-gap: 160px;
@@ -127,7 +126,7 @@ img {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   background-color: var(--dark-mode);
   transition: var(--color-transition), var(--background-transition);
 }
