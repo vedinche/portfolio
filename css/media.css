@@ -397,6 +397,10 @@
     height: 60px;
   }
 
+  .stack-cert__list {
+    gap: 40px;
+  }
+
   .stack-cert__link {
     display: block;
     width: 160px;
@@ -405,7 +409,7 @@
   }
 
   .stack-cert__item {
-    background-position: 47px 0px;
+    background-position: 62px 0px;
     background-size: 36px 36px;
   }
 

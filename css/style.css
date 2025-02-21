@@ -557,7 +557,8 @@ body {
 }
 
 .stack-cert__list {
-  justify-content: space-between;
+  justify-content: center;
+  gap: 60px;
 }
 
 .stack-cert__item {
@@ -585,14 +586,22 @@ body {
 
 .cert-cademy {
   background-image: url(../icons/it-academy.svg);
+  background-position: 60px 0;
+}
+
+.cert-seolab {
+  background-image: url(../icons/seolab.webp);
+  background-position: 40px 0;
 }
 
 .cert-skillbox {
   background-image: url(../icons/skillbox.svg);
+  background-position: 0 0;
 }
 
 .cert-udemy {
   background-image: url(../icons/udemy.svg);
+  background-position: 0 0;
 }
 
 /* projects */
@@ -635,6 +644,8 @@ body {
   padding-bottom: 20px;
   border-radius: 20px;
   max-width: 320px;
+  min-height: 200px;
+  height: 100%;
   background-color: #363636;
   background-image: url(../img/stub.webp);
   background-repeat: no-repeat;
@@ -645,6 +656,30 @@ body {
   border: 1px solid var(--color-white);
   background-color: var(--light-mode);
   box-shadow: none;
+}
+
+.project-prestige {
+  background-image: url(../img/prestige.webp);
+}
+
+.project-card {
+  background-image: url(../img/business-card.webp);
+}
+
+.project-agency {
+  background-image: url(../img/agency.webp);
+}
+
+.project-marketing {
+  background-image: url(../img/marketing.webp);
+}
+
+.project-art {
+  background-image: url(../img/art-gallery.webp);
+}
+
+.project-christmas {
+  background-image: url(../img/christmas.webp);
 }
 
 .projects__subtitle {
